@@ -1,7 +1,10 @@
 # Awesome-Story-Evaluation
-🔥 We release a survey paper for story evaluation:[], providing a thorough review of story evaluation.
+🔥 We release a survey paper for story evaluation: [What Makes a Good Story? A Survey of Story Evaluation]().
 
-🌟 In this repository, we provide detailed collections of story generation/evaluation benchmarks, and provide evaluation methods proposed or can be adopted for story evaluation.
+🌟 In this repository, we introduce main contents in our survey, and provide detailed collections of:
+- Story generation benchmarks
+- Story evaluation benchmarks
+- Metrics that are proposed or can be adopted for story evaluation.
 
 ✨ If you have any feedback or suggestions, please feel free to contact us at yangdingyi@ruc.edu.cn.
 
@@ -31,7 +34,8 @@
 <a name="introduction"></a>
 ## Introduction
 With the development of artificial intelligence, particularly the success of Large Language Models (LLMs), the quantity and quality of automatically generated stories have significantly increased. This has led to the need to explore automatic story evaluation to assess the generative capabilities of computing systems and analyze the quality of both automatic-generated and human-written stories. Evaluating a story can be more challenging than other generated text evaluation tasks. While tasks like language translation primarily focus on assessing the aspects of fluency and accuracy, story evaluation demands complex additional measures such as overall coherence, character development, interestingness, etc. This requires a thorough review of relevant research.
-  In this survey, we first summarize existing storytelling tasks, including text-to-text, visual-to-text, and text-to-visual. We highlight their evaluation challenges, identify various human criteria to measure stories, and present existing benchmark datasets. Then, we propose a taxonomy to organize evaluation metrics that have been developed or can be adopted for story evaluation. We also provide descriptions of these metrics, along with the discussion of their merits and limitations. Later, we discuss the human-AI collaboration for story evaluation and  generation. Finally, we suggest potential future research directions, extending from story evaluation to general evaluations.
+
+  In our survey, we first summarize existing storytelling tasks, including text-to-text, visual-to-text, and text-to-visual. We highlight their evaluation challenges, identify various human criteria to measure stories, and present existing benchmark datasets. Then, we propose a taxonomy to organize evaluation metrics that have been developed or can be adopted for story evaluation. We also provide descriptions of these metrics, along with the discussion of their merits and limitations. Later, we discuss the human-AI collaboration for story evaluation and  generation. Finally, we suggest potential future research directions, extending from story evaluation to general evaluations.
 
 <a name="story-generation"></a>
 ## Story Generation
@@ -115,9 +119,9 @@ the reader’s senses and imagination.
 | OpenMEVA | [Paper]() | [Download]() | Rating Scale (1-5)  | Overall | REL, FLU, COH, COMM | 2,000|  2,000| 
 | HANNA  |[Paper]() | [Download]() |  Rating Scale (1-5)  | Single  | REL, COH, EMP, SUP, INT, INF | 1,056|  19,008| 
 | VHED  | [Paper]() | [Download]() | Comparison  | Overall |  FLU, COH, SIM, REL | 4,500 | 13,875| 
-| StoryER-Rank  | [Paper]() | [Download]() | Comparison  | Overall|  NONE | 63,929 | 116,971| 
+| StoryER-Rank  | [Paper]() | [Download]() | Comparison  | Overall|  - | 63,929 | 116,971| 
 | StoryER-Rate  | [Paper]() | [Download]() | Rating Scale (1-5)  | Single|  COH, STY, EMP | 12,669 | 45,948| 
-| Per-MPST  | [Paper]() | [Download](https://github.com/facebookresearch/PerSE) | Comparison  | Overall|  NONE | 981 | 69,947 |
+| Per-MPST  | [Paper]() | [Download](https://github.com/facebookresearch/PerSE) | Comparison  | Overall|  - | 981 | 69,947 |
 | Per-DOC | [Paper]() | [Download](https://github.com/facebookresearch/PerSE) | Rating Scale (1-5)  |  Single | INT, ADAP, SUR, CHA, END | 596 | 8,922| 
 | Xie  | [Paper]() | [Download]() | Rating Scale (1-5)  | Single|  REL, FLU, COH, COMM, INT|  200 | 1,000| 
 | COHESENTIA | [Paper]() | [Download]() | Rating Scale (1-5)  | Single | COH | 500|  500 | 
@@ -262,8 +266,9 @@ evaluation are colored.
 | EvalLM| [EvalLM: Interactive Evaluation of Large Language Model Prompts on User-Defined Criteria](https://arxiv.org/abs/2309.13633) | arXiv | 2023 |
 
 <a name="performance"></a>
-### Evaluating Metrics on Story Evaluation Benchmark]
+### Evaluating Metrics on Story Evaluation Benchmark
 We present the evaluation performance of existing automatic metrics on the story evaluation benchmark. We focus on the most commonly used metrics and those demonstrating exceptional performance. 
+
 🌟 More discussions can be found in Section 7 of our survey.
 <div align="center">
   <img src="imgs/eval_performance.png" alt="LLM evaluation" width="700"><br>
