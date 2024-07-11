@@ -56,14 +56,14 @@ With the development of artificial intelligence, particularly the success of Lar
 | VWP | [Paper](https://aclanthology.org/2023.tacl-1.33.pdf) | [Download](https://vwprompt.github.io/) | Image Sequence→Story |  Visual Storytelling |  Movie |
 | Album Storytelling | [Paper](https://arxiv.org/pdf/2305.12943) | - | Image Sequence→Story  | Visual Storytelling |  Real World |
 | MUGEN | [Paper](https://arxiv.org/pdf/2204.08058) | [Download](https://mugen-org.github.io/data) | Story→Video |  Story Visualization |  Game |
-| PororoSV | [Paper]() | [Download]() | Story→Image Sequence  | Story Visualization  | Cartoon |
-| FlintstonesSV| [Paper]() | [Download]() | Story→Image Sequence  | Story Visualization  | Cartoon |
-| DiDeMoSV | [Paper]() | [Download]() | Story→Image Sequence |  Story Visualization  | Real World |
-| StorySalon | [Paper]() | [Download]() | Story→Image Sequence  | Story Visualization |  Animation |
-| MovieNet-TeViS | [Paper]() | [Download]() | Story→Image Sequence  | Story Illustration  | Movie |
-| CMD | [Paper]() | [Download]() | Story→Video Clip Sequence  | Story Illustration  | Movie |
-| CVSV | [Paper]() | [Download]() | Story→Video Clip Sequence |  Story Illustration  | Movie |
-| StoryBench | [Paper]() | [Download]() | Textual Story, Video Prompt→Video  | Continuous Story Visualization  | Real World |
+| PororoSV | [Paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Li_StoryGAN_A_Sequential_Conditional_GAN_for_Story_Visualization_CVPR_2019_paper.pdf) | [Download](https://github.com/yitong91/StoryGAN) | Story→Image Sequence  | Story Visualization  | Cartoon |
+| FlintstonesSV| [Paper](https://arxiv.org/pdf/1804.03608) | [Download](https://drive.google.com/file/d/1kG4esNwabJQPWqadSDaugrlF4dRaV33_/view) | Story→Image Sequence  | Story Visualization  | Cartoon |
+| DiDeMoSV | [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136970070.pdf) | [Download](https://drive.google.com/file/d/1zgj_bpE6Woyi-G76axF0nO-yzQaLBayc/view) | Story→Image Sequence |  Story Visualization  | Real World |
+| StorySalon | [Paper](https://arxiv.org/abs/2306.00973) | [Download](https://github.com/haoningwu3639/StoryGen) | Story→Image Sequence  | Story Visualization |  Animation |
+| MovieNet-TeViS | [Paper](https://doi.org/10.1145/3581783.3612417) | [Download](https://github.com/guxu313/TeViS) | Story→Image Sequence  | Story Illustration  | Movie |
+| CMD | [Paper](https://openaccess.thecvf.com/content/ACCV2020/papers/Bain_Condensed_Movies_Story_Based_Retrieval_with_Contextual_Embeddings_ACCV_2020_paper.pdf) | [Download](https://github.com/m-bain/CondensedMovies) | Story→Video Clip Sequence  | Story Illustration  | Movie |
+| CVSV | [Paper](https://doi.org/10.1109/TMM.2023.3296944) | [Download](https://nfy-dot.github.io/CVSV-dataset/) | Story→Video Clip Sequence |  Story Illustration  | Movie |
+| StoryBench | [Paper](https://arxiv.org/abs/2308.11606) | [Download](https://github.com/google/storybench) | Textual Story, Video Prompt→Video  | Continuous Story Visualization  | Real World |
 
 <a name="papers"></a>
 ## Papers
