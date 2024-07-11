@@ -13,7 +13,7 @@
 - [Story Evaluation](#papers)
   - [Criteria](#criteria)
   - [Benchmarks](#eval_benchmarks)
-- [Metrics](#papers)
+- [Metrics](#metrics)
   - [Traditional](#traditional)
     - [Lexical-Based](#lexical-based)
     - [Embedding-Based](#embedding-based)
@@ -26,6 +26,7 @@
     - [Generative-Based](#llm-generative-based)
     - [Trained](#llm-trained)
   - [Collaborative](#Collaborative)
+  - [Evaluating Metrics on Story Evaluation Benchmark](#performance)
 
 <a name="introduction"></a>
 ## Introduction
@@ -121,7 +122,7 @@ the reader’s senses and imagination.
 | Xie  | [Paper]() | [Download]() | Rating Scale (1-5)  | Single|  REL, FLU, COH, COMM, INT|  200 | 1,000| 
 | COHESENTIA | [Paper]() | [Download]() | Rating Scale (1-5)  | Single | COH | 500|  500 | 
 
-<a name="papers"></a>
+<a name="metrics"></a>
 ## Metrics
 Taxonomy of evaluation metrics proposed or can be adopted for story evaluation. These specifically proposed for story
 evaluation are colored.
@@ -130,7 +131,7 @@ evaluation are colored.
 </div>
 
 <a name="traditional"></a>
-### Traditional
+### Traditional Evaluation
 <a name="lexical-based"></a>
 #### Lexical-Based
 |  Metric  | Paper |  Venue	| Date |
@@ -190,6 +191,7 @@ evaluation are colored.
 | **Ending ACC** | [LongStory: Coherent, Complete and Length Controlled Long story Generation](https://aclanthology.org/2022.tacl-1.25.pdf) | PAKDD | 2024 |
 | RUBER | [RUBER: An Unsupervised Method for Automatic Evaluation of Open-Domain Dialog Systems](https://doi.org/10.1609/aaai.v32i1.11321) | AAAI | 2018 |
 | RUBER-BERT | [Better automatic evaluation of open-domain dialogue systems with contextualized embeddings](https://aclanthology.org/W19-2310/) | NAACL | 2019 |
+
 <a name="multi-modal"></a>
 #### Multi-Modal Evaluation
 |  Metric  | Paper |  Venue	| Date |
@@ -206,7 +208,7 @@ evaluation are colored.
 | **Background F1-Score** | [Make-A-Story: Visual Memory Conditioned Consistent Story Generation](https://doi.org/10.1109/CVPR52729.2023.00246) | CVPR | 2023 |
 
 <a name="LLM-based"></a>
-### LLM-Based
+### LLM-Based Evaluation
 <a name="llm-embedding-based"></a>
 #### Embedding-Based
 |  Metric  | Paper |  Venue	| Date |
@@ -219,7 +221,7 @@ evaluation are colored.
 |:------|:--------:|:--------:|:--------:|
 | GPTScore | [Gptscore: Evaluate as you desire](https://arxiv.org/abs/2302.04166) | NAACL | 2024 |
 | **DELTASCORE** | [Deltascore: Fine-grained story evaluation with perturbations](https://arxiv.org/abs/2303.08991) | EMNLP | 2023 |
-| Likelihood-Bias-Mitigation | [Likelihood-based Mitigation of Evaluation Bias in Large Language Models](https://arxiv.org/abs/2402.15987) | |arXiv |2024 |
+| Likelihood-Bias-Mitigation | [Likelihood-based Mitigation of Evaluation Bias in Large Language Models](https://arxiv.org/abs/2402.15987) | arXiv |2024 |
 
 <a name="llm-generative-based"></a>
 #### Generative-Based
@@ -236,6 +238,7 @@ evaluation are colored.
 | Bai | [Benchmarking Foundation Models with Language-Model-as-an-Examiner](https://openreview.net/pdf?id=IiRHQ7gvnq) |NeurIPS | 2023|
 | SCALEEVAL | [Can Large Language Models be Trusted for Evaluation? Scalable Meta-Evaluation of LLMs as Evaluators via Agent Debate](https://arxiv.org/pdf/2401.16788) |arXiv |2024 |
 
+<a name="llm-trained"></a>
 #### Trained
 |  Metric  | Paper |  Venue	| Date |
 |:------|:--------:|:--------:|:--------:|
@@ -248,8 +251,21 @@ evaluation are colored.
 | CritiqueLLM | [CritiqueLLM: Towards an Informative Critique Generation Model for Evaluation of Large misc Model Generation](https://arxiv.org/abs/2311.18702v2) | ACL | 2024 |
 | JudgeLM | [Judgelm: Fine-tuned large language models are scalable judges](https://arxiv.org/abs/2310.17631) |arXiV | 2023 |
 | TIGERScore | [TIGERScore: Towards Building Explainable Metric for All Text Generation Tasks](https://arxiv.org/abs/2310.00752) |TMLR |2024|
-| **COHESENTIA** | [COHESENTIA: A Novel Benchmark of Incremental versus Holistic Assessment of Coherence in Generated Texts]([https://openreview.net/pdf?id=7AS7vaVU8d](https://aclanthology.org/2023.emnlp-main.324/)) |EMNLP | 2023|
+| **COHESENTIA** | [COHESENTIA: A Novel Benchmark of Incremental versus Holistic Assessment of Coherence in Generated Texts](https://aclanthology.org/2023.emnlp-main.324/)) | EMNLP | 2023|
 | **PERSE** | [Learning Personalized Story Evaluation](https://openreview.net/pdf?id=7AS7vaVU8d) |arxiV | 2024|
 
 <a name="Collaborative"></a>
-### Collaborative
+### Collaborative Evaluation
+|  Metric  | Paper |  Venue	| Date |
+|:------|:--------:|:--------:|:--------:|
+| COEVAL | [Collaborative Evaluation: Exploring the Synergy of Large Language Models and Humans for Open-ended Generation Evaluation](https://arxiv.org/abs/2310.19740) | arXiv | 2023 |
+| EvalLM| [EvalLM: Interactive Evaluation of Large Language Model Prompts on User-Defined Criteria](https://arxiv.org/abs/2309.13633) | arXiv | 2023 |
+
+<a name="performance"></a>
+### Evaluating Metrics on Story Evaluation Benchmark]
+We present the evaluation performance of existing automatic metrics on the story evaluation benchmark. We focus on the most commonly used metrics and those demonstrating exceptional performance. 
+🌟 More discussions can be found in Section 7 of our survey.
+<div align="center">
+  <img src="imgs/eval_performance.png" alt="LLM evaluation" width="700"><br>
+  <l>The Person Correlation results of popular and LLM-based powerful metrics on OpenMEVA evaluation dataset.</l>
+</div>
