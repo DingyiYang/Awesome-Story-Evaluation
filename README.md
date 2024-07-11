@@ -1,7 +1,7 @@
 # Awesome-Story-Evaluation
 🔥 We release a survey paper for story evaluation: [What Makes a Good Story? A Survey of Story Evaluation]().
 
-🌟 In this repository, we introduce main contents in our survey, and provide detailed collections of:
+🌟 In this repository, we introduce the main contents of our survey and provide detailed collections of:
 - Story generation benchmarks
 - Story evaluation benchmarks
 - Metrics that are proposed or can be adopted for story evaluation.
