@@ -21,10 +21,10 @@
     - [Trained](#trained)
     - [Multi Modal](#multi-modal)
   - [LLM-Based](#LLM-based)
-    - [Embedding-Based](#embedding-based)
-    - [Probability-Based](#probability-based)
-    - [Generative-Based](#generative-based)
-    - [Trained](#trained)
+    - [Embedding-Based](#llm-embedding-based)
+    - [Probability-Based](#llm-probability-based)
+    - [Generative-Based](#llm-generative-based)
+    - [Trained](#llm-trained)
   - [Collaborative](#Collaborative)
 
 <a name="introduction"></a>
@@ -116,8 +116,8 @@ the reader’s senses and imagination.
 | VHED  | [Paper]() | [Download]() | Comparison  | Overall |  FLU, COH, SIM, REL | 4,500 | 13,875| 
 | StoryER-Rank  | [Paper]() | [Download]() | Comparison  | Overall|  NONE | 63,929 | 116,971| 
 | StoryER-Rate  | [Paper]() | [Download]() | Rating Scale (1-5)  | Single|  COH, STY, EMP | 12,669 | 45,948| 
-| Per-MPST  | [Paper]() | [Download]() | Comparison  | Overall|  NONE | 981 | 69,947 |
-| Per-DOC | [Paper]() | [Download]() | Rating Scale (1-5)  |  Single | INT, ADAP, SUR, CHA, END | 596 | 8,922| 
+| Per-MPST  | [Paper]() | [Download](https://github.com/facebookresearch/PerSE) | Comparison  | Overall|  NONE | 981 | 69,947 |
+| Per-DOC | [Paper]() | [Download](https://github.com/facebookresearch/PerSE) | Rating Scale (1-5)  |  Single | INT, ADAP, SUR, CHA, END | 596 | 8,922| 
 | Xie  | [Paper]() | [Download]() | Rating Scale (1-5)  | Single|  REL, FLU, COH, COMM, INT|  200 | 1,000| 
 | COHESENTIA | [Paper]() | [Download]() | Rating Scale (1-5)  | Single | COH | 500|  500 | 
 
@@ -194,10 +194,53 @@ evaluation are colored.
 #### Multi-Modal Evaluation
 |  Metric  | Paper |  Venue	| Date |
 |:------|:--------:|:--------:|:--------:|
-|  | []() |  |  |
-|  | []() |  |  |
-|  | []() |  |  |
+| R-Precision | [StoryGAN: A Sequential Conditional GAN for Story Visualization](https://openaccess.thecvf.com/content_CVPR_2019/papers/Li_StoryGAN_A_Sequential_Conditional_GAN_for_Story_Visualization_CVPR_2019_paper.pdf) | CVPR | 2019 |
+| Visual Captioning Accuracy | [Improving Generation and Evaluation of Visual Stories via Semantic Consistency](https://doi.org/10.18653/v1/2021.naacl-main.194) | NAACL | 2021 |
+| ClipScore | [CLIPScore: A Reference-free Evaluation Metric for Image Captioning](https://doi.org/10.18653/v1/2021.emnlp-main.595) | EMNLP | 2021 |
+| EMScore | [EMScore: Evaluating Video Captioning via Coarse-Grained and Fine-Grained Embedding Matching](https://doi.org/10.1109/CVPR52688.2022.01740) | CVPR | 2022 |
+| **RoViST** | [RoViST: Learning Robust Metrics for Visual Storytelling](https://doi.org/10.18653/v1/2022.findings-naacl.206) | NAACL | 2022 |
+| **GROOViST** | [GROOViST: A Metric for Grounding Objects in Visual Storytelling](https://doi.org/10.18653/v1/2023.emnlp-main.202) | EMNLP | 2023 |
+| **Character Accuracy** | [StoryGAN: A Sequential Conditional GAN for Story Visualization](https://openaccess.thecvf.com/content_CVPR_2019/papers/Li_StoryGAN_A_Sequential_Conditional_GAN_for_Story_Visualization_CVPR_2019_paper.pdf) | CVPR | 2019 |
+| **Character F1-Score** | [Improving Generation and Evaluation of Visual Stories via Semantic Consistency](https://doi.org/10.18653/v1/2021.naacl-main.194) | NAACL | 2021 |
+| **Background Accuracy**  | [Make-A-Story: Visual Memory Conditioned Consistent Story Generation](https://doi.org/10.1109/CVPR52729.2023.00246) | CVPR | 2023 |
+| **Background F1-Score** | [Make-A-Story: Visual Memory Conditioned Consistent Story Generation](https://doi.org/10.1109/CVPR52729.2023.00246) | CVPR | 2023 |
+
 <a name="LLM-based"></a>
 ### LLM-Based
+<a name="llm-embedding-based"></a>
+#### Embedding-Based
+|  Metric  | Paper |  Venue	| Date |
+|:------|:--------:|:--------:|:--------:|
+|  CosineSimilarity-ada-002| [RAGAs: Automated Evaluation of Retrieval Augmented Generation](https://aclanthology.org/2024.eacl-demo.16) | EACL | 2024 |
+
+<a name="llm-probability-based"></a>
+#### Probability-Based
+|  Metric  | Paper |  Venue	| Date |
+|:------|:--------:|:--------:|:--------:|
+| GPTScore | [Gptscore: Evaluate as you desire](https://arxiv.org/abs/2302.04166) | NAACL | 2024 |
+| **DELTASCORE** | [Deltascore: Fine-grained story evaluation with perturbations](https://arxiv.org/abs/2303.08991) | EMNLP | 2023 |
+
+
+<a name="llm-generative-based"></a>
+#### Generative-Based
+|  Metric  | Paper |  Venue	| Date |
+|:------|:--------:|:--------:|:--------:|
+| | []() | | |
+
+<a name="llm-trained"></a>
+#### Trained
+|  Metric  | Paper |  Venue	| Date |
+|:------|:--------:|:--------:|:--------:|
+| UniEval | [Towards a Unified Multi-Dimensional Evaluator for Text Generation](https://doi.org/10.18653/v1/2022.emnlp-main.131) | EMNLP | 2022 |
+| T5Score | [T5Score: Discriminative Fine-tuning of Generative Evaluation Metrics](https://doi.org/10.18653/v1/2023.findings-emnlp.1014) | EMNLP| 2023|
+| PandaLM | [PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization](https://doi.org/10.48550/arXiv.2306.05087) |ICLR | 2024|
+| Prometheus | [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491) |ICLR | 2024|
+| Shepherd | [Shepherd: A critic for language model generation](https://arxiv.org/abs/2308.04592) | arXiV| 2023|
+| Auto-J  | [Generative judge for evaluating alignment](https://arxiv.org/abs/2310.05470) | ICLR | 2024|
+| CritiqueLLM | [CritiqueLLM: Towards an Informative Critique Generation Model for Evaluation of Large misc Model Generation](https://arxiv.org/abs/2311.18702v2) | ACL | 2024 |
+| JudgeLM | [Judgelm: Fine-tuned large language models are scalable judges](https://arxiv.org/abs/2310.17631) |arXiV | 2023 |
+| TIGERScore | [TIGERScore: Towards Building Explainable Metric for All Text Generation Tasks](https://arxiv.org/abs/2310.00752) |TMLR |2024|
+| **PERSE** | [Learning Personalized Story Evaluation](https://openreview.net/pdf?id=7AS7vaVU8d) |arxiV | 2024|
+
 <a name="Collaborative"></a>
 ### Collaborative
