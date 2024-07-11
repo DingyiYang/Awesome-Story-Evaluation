@@ -29,7 +29,7 @@
     - [Generative-Based](#llm-generative-based)
     - [Trained](#llm-trained)
   - [Collaborative](#Collaborative)
-  - [Evaluating Metrics on Story Evaluation Benchmark](#performance)
+- [Evaluating Metrics on Story Evaluation Benchmark](#performance)
 
 <a name="introduction"></a>
 ## Introduction
