@@ -33,25 +33,25 @@ With the development of artificial intelligence, particularly the success of Lar
 
 ### Benchmarks
 
-|  Corpora  | Paper |   Data Source  |  Annotations | Correlated Task   |   Domain  |
-|:--------|:--------:|:--------:|:--------:|:--------:|:--------:|
-| Children's Books  | [Paper]() | [Download]() | Story Context, Query→Infilling Entity | Story Completion | Fairy Tale |
-| CNN | [Paper]() |  [Download]() | Story Context, Query→Infilling Entity |  Story Completion |  News |
-| Story Cloze Test  | [Paper]() |  [Download]() | Story Context→Ending  | Story Completion |  Commonsense |
-| RocStories  | [Paper]() |  [Download]() | Title→Five-Sentence Story  | Story Generation |  Commonsense |
-| NYTimes  | [Paper]() |  [Download]() | Title→Outline→Story  | Story Generation |  News |
-| WritingPrompts |  [Paper]() | [Download]() | Prompt→Story  | Story Generation  | Real World |
-| Mystery  | [Paper]() |  [Download]() | Outline→Story |  Story Generation |  Fiction |
-| Fairy Tales  | [Paper]() |  [Download]() | Outline→Story  | Story Generation  | Fiction |
-| Hippocorpus  |  [Paper]() | [Download]() | Prompt→Story  | Story Generation  | General |
-| STORIUM  |  [Paper]() | [Download]() | Structural Prompt→Story  | Story Generation |  Fiction |
-| TVSTORYGEN |  [Paper]() | [Download]() | Character Descriptions, Prompt→Story  | Story Generation  | TV Show |
-| LOT | [Paper]() |  [Download]() | Title→Outline→Story  | Story Completion/Generation  | Fiction |
-| GPT-BOOKSUM | [Paper]() | [Download]() | Outline→Story | Story/Plot Generation | Fiction |
-| Image Paragraph | [Paper]() | [Download]() | Image→Story | Image Paragraph Captioning | Real World |
-| Travel Blogs | [Paper]() | [Download]() |  Image→Story |  Visual Storytelling |  Real World |
-| VIST | [Paper]() | [Download]() | Image Sequence→Story |  Visual Storytelling |  Real World |
-| AESOP | [Paper]() | [Download]() | Image Sequence→Story |  Visual Storytelling |  Real World |
+|  Corpora  | Paper |   Data Source  |  Annotations | Correlated Task |   Domain  |
+|:------------|:--------:|:--------:|:--------:|:------:|:--------:|
+| Children's Books  | [Paper](http://arxiv.org/abs/1511.02301) | [Download](https://research.facebook.com/downloads/babi) | Story Context, Query→Infilling Entity | Story Completion | Fairy Tale |
+| CNN | [Paper](https://proceedings.neurips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html) |  [Download](https://github.com/abisee/cnn-dailymail) | Story Context, Query→Infilling Entity |  Story Completion |  News |
+| Story Cloze Test  | [Paper](https://doi.org/10.18653/v1/n16-1098) |  [Download](https://cs.rochester.edu/nlp/rocstories/) | Story Context→Ending  | Story Completion |  Commonsense |
+| RocStories  | [Paper](https://doi.org/10.18653/v1/n16-1098) |  [Download](https://cs.rochester.edu/nlp/rocstories/) | Title→Five-Sentence Story  | Story Generation |  Commonsense |
+| NYTimes  | [Paper](https://aclanthology.org/2020.emnlp-main.349.pdf) |  [Download](https://github.com/hrashkin/plotmachines/tree/master/src/preprocessing) | Title→Outline→Story  | Story Generation |  News |
+| WritingPrompts |  [Paper](https://aclanthology.org/P18-1082.pdf) | [Download](https://www.kaggle.com/datasets/ratthachat/writing-prompts) | Prompt→Story  | Story Generation  | Real World |
+| Mystery  | [Paper](https://arxiv.org/pdf/2001.10161) |  [Download](https://github.com/rajammanabrolu/WorldGeneration) | Outline→Story |  Story Generation |  Fiction |
+| Fairy Tales  | [Paper](https://arxiv.org/pdf/2001.10161) |  [Download](https://github.com/rajammanabrolu/WorldGeneration) | Outline→Story  | Story Generation  | Fiction |
+| Hippocorpus  |  [Paper](https://aclanthology.org/2020.acl-main.178/) | [Download](http://aka.ms/hippocorpus) | Prompt→Story  | Story Generation  | General |
+| STORIUM  |  [Paper](https://aclanthology.org/2020.emnlp-main.525/) | [Download](https://github.com/dojoteef/storium-frontend) | Structural Prompt→Story  | Story Generation |  Fiction |
+| TVSTORYGEN |  [Paper](https://arxiv.org/pdf/2109.08833) | [Download](https://github.com/mingdachen/TVRecap) | Character Descriptions, Prompt→Story  | Story Generation  | TV Show |
+| LOT | [Paper](https://aclanthology.org/2022.tacl-1.25.pdf) |  [Download](https://github.com/thu-coai/LOT-LongLM) | Title→Outline→Story  | Story Completion/Generation  | Fiction |
+| GPT-BOOKSUM | [Paper](https://aclanthology.org/2023.findings-emnlp.723.pdf) | [Download](https://github.com/YichenZW/Pacing) | Outline→Story | Story/Plot Generation | Fiction |
+| Image Paragraph | [Paper](https://arxiv.org/pdf/1611.06607) | [Download](https://cs.stanford.edu/people/ranjaykrishna/im2p/index.html) | Image→Story | Image Paragraph Captioning | Real World |
+| Travel Blogs | [Paper](https://proceedings.neurips.cc/paper_files/paper/2015/file/17e62166fc8586dfa4d1bc0e1742c08b-Paper.pdf) | [Download](https://github.com/cesc-park/CRCN/tree/master) |  Image→Story |  Visual Storytelling |  Real World |
+| VIST | [Paper](https://aclanthology.org/N16-1147v2.pdf) | [Download](https://visionandlanguage.net/VIST/) | Image Sequence→Story |  Visual Storytelling |  Real World |
+| AESOP | [Paper](https://ieeexplore.ieee.org/document/9710625) | [Download](https://github.com/adobe-research/aesop) | Image Sequence→Story |  Visual Storytelling |  Real World |
 | Video Storytelling | [Paper](https://arxiv.org/pdf/1807.09418v3) | [Download](https://zenodo.org/records/2383739) | Video→Story |  Video Storytelling  | Real World |
 | VWP | [Paper](https://aclanthology.org/2023.tacl-1.33.pdf) | [Download](https://vwprompt.github.io/) | Image Sequence→Story |  Visual Storytelling |  Movie |
 | Album Storytelling | [Paper](https://arxiv.org/pdf/2305.12943) | - | Image Sequence→Story  | Visual Storytelling |  Real World |
