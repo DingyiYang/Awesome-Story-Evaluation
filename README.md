@@ -22,7 +22,7 @@
     - [Embedding-Based](#embedding-based)
     - [Probability-Based](#probability-based)
     - [Trained](#trained)
-    - [Multi Modal](#multi-modal)
+    - [Multi-Modal Evaluation](#multi-modal)
   - [LLM-Based](#LLM-based)
     - [Embedding-Based](#llm-embedding-based)
     - [Probability-Based](#llm-probability-based)
