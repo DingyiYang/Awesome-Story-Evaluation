@@ -27,24 +27,43 @@ With the development of artificial intelligence, particularly the success of Lar
 ### Tasks
 <br>
 <div align="left">
-  <img src="imgs/tasks.pdf" alt="LLM evaluation" width="700"><br>
+  <img src="imgs/tasks.png" alt="LLM evaluation" width="700"><br>
 </div>
 <br>
+
 ### Benchmarks
-|  Corpora  |    Data Source   |  Annotations | Correlated Task   |   Domain  |
-|:--------|:--------:|:--------:|:--------:|:--------:|
-| [**Children's Books**]()  | [Download]() | Story Context, Query→Infilling Entity | Story Completion | Fairy Tale |
-| [**CNN**]() |  [Download]() | Story Context, Query→Infilling Entity |  Story Completion |  News |
-| [**Story Cloze Test**]()  |  [Download]() | Story Context→Ending  | Story Completion |  Commonsense |
-| [**RocStories**]()  |  [Download]() | Title→Five-Sentence Story  | Story Generation |  Commonsense |
-| [**NYTimes**]()  |  [Download]() | Title→Outline[143]→Story  | Story Generation |  News |
-| [**WritingPrompts**]() |  [Download]() | Prompt→Outline→Story  | Story Generation  | Real World |
-| [**Mystery**]()  |  [Download]() | Outline→Story |  Story Generation |  Fiction |
-| [**Fairy Tales**]()  |  [Download]() | Outline→Story  | Story Generation  | Fiction |
-| [**Hippocorpus**]()  |  [Download]() | Prompt→Story  | Story Generation  | General |
-| [**STORIUM**]()  |  [Download]() | Structural Prompt→Story  | Story Generation |  Fiction |
-| [**TVSTORYGEN**]() |  [Download]() | Prompt, Character Descriptions→Story  | Story Generation  | TV Show |
-| [**LOT**]()  |  [Download]() | Title→Outline→Story  | Story Completion/Generation  | Fiction |
+
+|  Corpora  | Paper |   Data Source  |  Annotations | Correlated Task   |   Domain  |
+|:--------|:--------:|:--------:|:--------:|:--------:|:--------:|
+| Children's Books  | [Paper]() | [Download]() | Story Context, Query→Infilling Entity | Story Completion | Fairy Tale |
+| CNN | [Paper]() |  [Download]() | Story Context, Query→Infilling Entity |  Story Completion |  News |
+| Story Cloze Test  | [Paper]() |  [Download]() | Story Context→Ending  | Story Completion |  Commonsense |
+| RocStories  | [Paper]() |  [Download]() | Title→Five-Sentence Story  | Story Generation |  Commonsense |
+| NYTimes  | [Paper]() |  [Download]() | Title→Outline→Story  | Story Generation |  News |
+| WritingPrompts |  [Paper]() | [Download]() | Prompt→Story  | Story Generation  | Real World |
+| Mystery  | [Paper]() |  [Download]() | Outline→Story |  Story Generation |  Fiction |
+| Fairy Tales  | [Paper]() |  [Download]() | Outline→Story  | Story Generation  | Fiction |
+| Hippocorpus  |  [Paper]() | [Download]() | Prompt→Story  | Story Generation  | General |
+| STORIUM  |  [Paper]() | [Download]() | Structural Prompt→Story  | Story Generation |  Fiction |
+| TVSTORYGEN |  [Paper]() | [Download]() | Character Descriptions, Prompt→Story  | Story Generation  | TV Show |
+| LOT | [Paper]() |  [Download]() | Title→Outline→Story  | Story Completion/Generation  | Fiction |
+| GPT-BOOKSUM | [Paper]() | [Download]() | Outline→Story | Story/Plot Generation | Fiction |
+| Image Paragraph | [Paper]() | [Download]() | Image→Story | Image Paragraph Captioning | Real World |
+| Travel Blogs | [Paper]() | [Download]() |  Image→Story |  Visual Storytelling |  Real World |
+| VIST | [Paper]() | [Download]() | Image Sequence→Story |  Visual Storytelling |  Real World |
+| AESOP | [Paper]() | [Download]() | Image Sequence→Story |  Visual Storytelling |  Real World |
+| Video Storytelling | [Paper](https://arxiv.org/pdf/1807.09418v3) | [Download](https://zenodo.org/records/2383739) | Video→Story |  Video Storytelling  | Real World |
+| VWP | [Paper](https://aclanthology.org/2023.tacl-1.33.pdf) | [Download](https://vwprompt.github.io/) | Image Sequence→Story |  Visual Storytelling |  Movie |
+| Album Storytelling | [Paper](https://arxiv.org/pdf/2305.12943) | - | Image Sequence→Story  | Visual Storytelling |  Real World |
+| MUGEN | [Paper](https://arxiv.org/pdf/2204.08058) | [Download](https://mugen-org.github.io/data) | Story→Video |  Story Visualization |  Game |
+| PororoSV | [Paper]() | [Download]() | Story→Image Sequence  | Story Visualization  | Cartoon |
+| FlintstonesSV| [Paper]() | [Download]() | Story→Image Sequence  | Story Visualization  | Cartoon |
+| DiDeMoSV | [Paper]() | [Download]() | Story→Image Sequence |  Story Visualization  | Real World |
+| StorySalon | [Paper]() | [Download]() | Story→Image Sequence  | Story Visualization |  Animation |
+| MovieNet-TeViS | [Paper]() | [Download]() | Story→Image Sequence  | Story Illustration  | Movie |
+| CMD | [Paper]() | [Download]() | Story→Video Clip Sequence  | Story Illustration  | Movie |
+| CVSV | [Paper]() | [Download]() | Story→Video Clip Sequence |  Story Illustration  | Movie |
+| StoryBench | [Paper]() | [Download]() | Textual Story, Video Prompt→Video  | Continuous Story Visualization  | Real World |
 
 <a name="papers"></a>
 ## Papers
