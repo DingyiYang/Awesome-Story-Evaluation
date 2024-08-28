@@ -1,5 +1,5 @@
 # Awesome-Story-Evaluation
-🔥 We release a survey paper for story evaluation: [What Makes a Good Story? A Survey of Story Evaluation](https://arxiv.org/abs/2408.14622).
+🔥 We release a survey paper for story evaluation: [What Makes a Good Story and How Can We Measure It? A Comprehensive Survey of Story Evaluation](https://arxiv.org/abs/2408.14622).
 
 🌟 In this repository, we introduce the main contents of our survey and provide detailed collections of:
 - Story generation tasks and benchmarks.
@@ -138,7 +138,7 @@ the readers’ senses and imagination.
 Taxonomy of evaluation metrics proposed or can be adopted for story evaluation. These specifically proposed for story
 evaluation are colored.
 <div align="center">
-  <img src="imgs/story_eval_taxonomy.png" alt="LLM evaluation" width="700"><br>
+  <img src="imgs/taxonomy.png" alt="LLM evaluation" width="700"><br>
 </div>
 
 <a name="traditional"></a>
@@ -240,6 +240,8 @@ evaluation are colored.
 |:------|:--------:|:--------:|:--------:|
 | PORTIA | [Split and merge: Aligning position biases in large language model based evaluators](https://arxiv.org/pdf/2310.01432) |arXiv |2023 |
 | FairEval | [Large language models are not fair evaluators](https://arxiv.org/abs/2305.17926) | arXiV |2023 |
+| G-EVAL | [G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment](https://arxiv.org/abs/2303.16634) | EMNLP |2023 |
+| ICE | [Multi-Dimensional Evaluation of Text Summarization with In-Context Learning](https://aclanthology.org/2023.findings-acl.537/) | ACL |2023 |
 | BSM | [Branch-Solve-Merge Improves Large Language Model Evaluation and Generation](https://aclanthology.org/2024.naacl-long.462.pdf) | NAACL| 2024 |
 | WideDeep | [Wider and deeper llm networks are fairer llm evaluators](https://arxiv.org/abs/2308.01862) | arXiv |2023 |
 | COAScore | [CoAScore: Chain-of-Aspects Prompting for NLG Evaluation](https://arxiv.org/pdf/2312.10355v1) | arXiv |2023 |
@@ -254,6 +256,7 @@ evaluation are colored.
 |  Metric  | Paper |  Venue	| Date |
 |:------|:--------:|:--------:|:--------:|
 | UniEval | [Towards a Unified Multi-Dimensional Evaluator for Text Generation](https://doi.org/10.18653/v1/2022.emnlp-main.131) | EMNLP | 2022 |
+| InstructScore | [INSTRUCTSCORE: Towards Explainable Text Generation Evaluation with Automatic Feedback](https://aclanthology.org/2023.emnlp-main.365/) | EMNLP | 2023 |
 | T5Score | [T5Score: Discriminative Fine-tuning of Generative Evaluation Metrics](https://doi.org/10.18653/v1/2023.findings-emnlp.1014) | EMNLP| 2023|
 | PandaLM | [PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization](https://doi.org/10.48550/arXiv.2306.05087) |ICLR | 2024|
 | Prometheus | [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491) |ICLR | 2024|
@@ -262,8 +265,9 @@ evaluation are colored.
 | CritiqueLLM | [CritiqueLLM: Towards an Informative Critique Generation Model for Evaluation of Large misc Model Generation](https://arxiv.org/abs/2311.18702v2) | ACL | 2024 |
 | JudgeLM | [Judgelm: Fine-tuned large language models are scalable judges](https://arxiv.org/abs/2310.17631) |arXiV | 2023 |
 | TIGERScore | [TIGERScore: Towards Building Explainable Metric for All Text Generation Tasks](https://arxiv.org/abs/2310.00752) |TMLR |2024|
+| NOV_COHERENCE | [A Novel Computational and Modeling Foundation for Automatic Coherence Assessment](https://arxiv.org/abs/2310.00598)) | arXiv | 2023|
 | **COHESENTIA** | [COHESENTIA: A Novel Benchmark of Incremental versus Holistic Assessment of Coherence in Generated Texts](https://aclanthology.org/2023.emnlp-main.324/)) | EMNLP | 2023|
-| **PERSE** | [Learning Personalized Story Evaluation](https://openreview.net/pdf?id=7AS7vaVU8d) |arxiV | 2024|
+| **PERSE** | [Learning Personalized Story Evaluation](https://openreview.net/pdf?id=7AS7vaVU8d) |arXiv | 2024|
 
 <a name="Collaborative"></a>
 ### Collaborative Evaluation
@@ -279,5 +283,5 @@ We present the evaluation performance of existing automatic metrics on the story
 🌟 More discussions can be found in Section 7 of our survey.
 <div align="center">
   <img src="imgs/eval_performance.png" alt="LLM evaluation" width="700"><br>
-  <l>The Person Correlation results of popular and LLM-based powerful metrics on OpenMEVA evaluation dataset.</l>
+  <l>The Pearson Correlation between various metrics and human ratings on OpenMEVA (ROC) benchmark dataset.</l>
 </div>
