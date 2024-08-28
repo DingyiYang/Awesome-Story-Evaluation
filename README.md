@@ -1,10 +1,10 @@
 # Awesome-Story-Evaluation
-🔥 We release a survey paper for story evaluation: [What Makes a Good Story? A Survey of Story Evaluation]().
+🔥 We release a survey paper for story evaluation: [What Makes a Good Story? A Survey of Story Evaluation](https://arxiv.org/abs/2408.14622).
 
 🌟 In this repository, we introduce the main contents of our survey and provide detailed collections of:
-- Story generation tasks and benchmarks
-- Story evaluation criteria and benchmarks
-- Metrics that are proposed or can be adopted for story evaluation.
+- Story generation tasks and benchmarks.
+- Story evaluation criteria and benchmarks.
+- Metrics that are proposed for or capable to story evaluation.
 
 ✨ If you have any feedback or suggestions, please feel free to contact us at yangdingyi@ruc.edu.cn.
 
@@ -33,9 +33,18 @@
 
 <a name="introduction"></a>
 ## Introduction
-With the development of artificial intelligence, particularly the success of Large Language Models (LLMs), the quantity and quality of automatically generated stories have significantly increased. This has led to the need to explore automatic story evaluation to assess the generative capabilities of computing systems and analyze the quality of both automatic-generated and human-written stories. Evaluating a story can be more challenging than other generated text evaluation tasks. While tasks like language translation primarily focus on assessing the aspects of fluency and accuracy, story evaluation demands complex additional measures such as overall coherence, character development, interestingness, etc. This requires a thorough review of relevant research.
+With the development of artificial intelligence, particularly the success of Large Language Models (LLMs), the quantity and quality
+of automatically generated stories have significantly increased. This has led to the need for automatic story evaluation to assess
+the generative capabilities of computing systems and analyze the quality of both automatic-generated and human-written stories.
+Evaluating a story can be more challenging than other generation evaluation tasks. While tasks like machine translation primarily focus
+on assessing the aspects of fluency and accuracy, story evaluation demands complex additional measures such as overall coherence,
+character development, interestingness, etc. This requires a thorough review of relevant research. 
 
-  In our survey, we first summarize existing storytelling tasks, including text-to-text, visual-to-text, and text-to-visual. We highlight their evaluation challenges, identify various human criteria to measure stories, and present existing benchmark datasets. Then, we propose a taxonomy to organize evaluation metrics that have been developed or can be adopted for story evaluation. We also provide descriptions of these metrics, along with the discussion of their merits and limitations. Later, we discuss the human-AI collaboration for story evaluation and  generation. Finally, we suggest potential future research directions, extending from story evaluation to general evaluations.
+In this survey, we first summarize existing storytelling tasks, including text-to-text, visual-to-text, and text-to-visual. We highlight their evaluation challenges, identify
+various human criteria to measure stories, and present existing benchmark datasets. Then, we propose a taxonomy to organize
+evaluation metrics that have been developed or can be adopted for story evaluation. We also provide descriptions of these metrics,
+along with the discussion of their merits and limitations. Later, we discuss the human-AI collaboration for story evaluation and
+generation. Finally, we suggest potential future research directions, extending from story evaluation to general evaluations.
 
 <a name="story-generation"></a>
 ## Story Generation
@@ -64,8 +73,8 @@ With the development of artificial intelligence, particularly the success of Lar
 | Mystery  | [Paper](https://arxiv.org/pdf/2001.10161) |  [Download](https://github.com/rajammanabrolu/WorldGeneration) | Outline→Story |  Story Generation |  Fiction |
 | Fairy Tales  | [Paper](https://arxiv.org/pdf/2001.10161) |  [Download](https://github.com/rajammanabrolu/WorldGeneration) | Outline→Story  | Story Generation  | Fiction |
 | Hippocorpus  |  [Paper](https://aclanthology.org/2020.acl-main.178/) | [Download](http://aka.ms/hippocorpus) | Prompt→Story  | Story Generation  | General |
-| STORIUM  |  [Paper](https://aclanthology.org/2020.emnlp-main.525/) | [Download](https://github.com/dojoteef/storium-frontend) | Structural Prompt→Story  | Story Generation |  Fiction |
-| TVSTORYGEN |  [Paper](https://arxiv.org/pdf/2109.08833) | [Download](https://github.com/mingdachen/TVRecap) | Character Descriptions, Prompt→Story  | Story Generation  | TV Show |
+| STORIUM  |  [Paper](https://aclanthology.org/2020.emnlp-main.525/) | [Download](https://github.com/dojoteef/storium-frontend) | Prompt, Structural Descriptions →Story  | Story Generation |  Fiction |
+| TVSTORYGEN |  [Paper](https://arxiv.org/pdf/2109.08833) | [Download](https://github.com/mingdachen/TVRecap) | Prompt, Character Descriptions →Story  | Story Generation  | TV Show |
 | LOT | [Paper](https://aclanthology.org/2022.tacl-1.25.pdf) |  [Download](https://github.com/thu-coai/LOT-LongLM) | Title→Outline→Story  | Story Completion/Generation  | Fiction |
 | GPT-BOOKSUM | [Paper](https://aclanthology.org/2023.findings-emnlp.723.pdf) | [Download](https://github.com/YichenZW/Pacing) | Outline→Story | Story/Plot Generation | Fiction |
 | Image Paragraph | [Paper](https://arxiv.org/pdf/1611.06607) | [Download](https://cs.stanford.edu/people/ranjaykrishna/im2p/index.html) | Image→Story | Image Paragraph Captioning | Real World |
@@ -76,39 +85,37 @@ With the development of artificial intelligence, particularly the success of Lar
 | VWP | [Paper](https://aclanthology.org/2023.tacl-1.33.pdf) | [Download](https://vwprompt.github.io/) | Image Sequence→Story |  Visual Storytelling |  Movie |
 | Album Storytelling | [Paper](https://arxiv.org/pdf/2305.12943) | - | Image Sequence→Story  | Visual Storytelling |  Real World |
 | MUGEN | [Paper](https://arxiv.org/pdf/2204.08058) | [Download](https://mugen-org.github.io/data) | Story→Video |  Story Visualization |  Game |
-| PororoSV | [Paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Li_StoryGAN_A_Sequential_Conditional_GAN_for_Story_Visualization_CVPR_2019_paper.pdf) | [Download](https://github.com/yitong91/StoryGAN) | Story→Image Sequence  | Story Visualization  | Cartoon |
-| FlintstonesSV| [Paper](https://arxiv.org/pdf/1804.03608) | [Download](https://drive.google.com/file/d/1kG4esNwabJQPWqadSDaugrlF4dRaV33_/view) | Story→Image Sequence  | Story Visualization  | Cartoon |
-| DiDeMoSV | [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136970070.pdf) | [Download](https://drive.google.com/file/d/1zgj_bpE6Woyi-G76axF0nO-yzQaLBayc/view) | Story→Image Sequence |  Story Visualization  | Real World |
-| StorySalon | [Paper](https://arxiv.org/abs/2306.00973) | [Download](https://github.com/haoningwu3639/StoryGen) | Story→Image Sequence  | Story Visualization |  Animation |
+| PororoSV | [Paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Li_StoryGAN_A_Sequential_Conditional_GAN_for_Story_Visualization_CVPR_2019_paper.pdf) | [Download](https://github.com/yitong91/StoryGAN) | Story→Image Sequence  | (Continuous) Story Visualization  | Cartoon |
+| FlintstonesSV| [Paper](https://arxiv.org/pdf/1804.03608) | [Download](https://drive.google.com/file/d/1kG4esNwabJQPWqadSDaugrlF4dRaV33_/view) | Story→Image Sequence  | (Continuous) Story Visualization  | Cartoon |
+| DiDeMoSV | [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136970070.pdf) | [Download](https://drive.google.com/file/d/1zgj_bpE6Woyi-G76axF0nO-yzQaLBayc/view) | Story→Image Sequence |  (Continuous) Story Visualization  | Real World |
+| StorySalon | [Paper](https://arxiv.org/abs/2306.00973) | [Download](https://github.com/haoningwu3639/StoryGen) | Story→Image Sequence  | (Continuous) Story Visualization |  Animation |
 | MovieNet-TeViS | [Paper](https://doi.org/10.1145/3581783.3612417) | [Download](https://github.com/guxu313/TeViS) | Story→Image Sequence  | Story Illustration  | Movie |
 | CMD | [Paper](https://openaccess.thecvf.com/content/ACCV2020/papers/Bain_Condensed_Movies_Story_Based_Retrieval_with_Contextual_Embeddings_ACCV_2020_paper.pdf) | [Download](https://github.com/m-bain/CondensedMovies) | Story→Video Clip Sequence  | Story Illustration  | Movie |
 | CVSV | [Paper](https://doi.org/10.1109/TMM.2023.3296944) | [Download](https://nfy-dot.github.io/CVSV-dataset/) | Story→Video Clip Sequence |  Story Illustration  | Movie |
-| StoryBench | [Paper](https://arxiv.org/abs/2308.11606) | [Download](https://github.com/google/storybench) | Textual Story, Video Prompt→Video  | Continuous Story Visualization  | Real World |
+| StoryBench | [Paper](https://arxiv.org/abs/2308.11606) | [Download](https://github.com/google/storybench) | Story→Video Segments  | (Continuous) Story Visualization  | Real World |
 
 <a name="papers"></a>
 ## Story Evaluation
 <a name="criteria"></a>
 ### Criteria
-- **Relevance/Faithfulness (REL):** Whether the story is relevant to and accurately reflects the source input. (Text-to-Visual tasks measure whether the visual story matches the textual story).
+- **Relevance (REL):** Whether the story is relevant to and reasonably reflects the source input.
 - **Diversity (DIV):** Whether the stories generated by one model have many variations.
-- **Fluency (FLU):** Whether the individual sentences within a story are of high quality, are they grammatically correct, non-repetitive, and in accord with common language usage.
-  - **Grammaticality:** Whether the individual sentences are grammatically correct without lexical or syntax errors, regardless of the content and meaning.
+- **Fluency (FLU):** Whether the individual sentences within a story are of high quality. They should be grammatically correct, free of typos, non-repetitive, and in line with common language usage.
+  - **Grammaticality:** Whether the individual sentences are grammatically correct without lexical or syntax errors. Note it focuses on syntax only, not semantics.
   - **Non-redundancy:** Whether the individual sentences are free of redundant elements, such as repetition, over-specificity, etc.
-- **Simplicity/Clarity (SIM):** Whether the story is clear and easy to understand, with no confusing or ambiguous elements.
-- **Coherence (COH):** Whether all sentences and plots are well structured, with the context organized and connected logically.
-While evaluating the coherence, try to ignore grammar or spelling errors.
-  - **Cohesive:**  Whether the sentences in a story are formally connected. They can be connected by either a referential link
-(co-reference, bridging anaphora) or by a semantic connector.
+- **Coherence (COH):** Whether all sentences and plots are well structured, with the context organized and connected logically. Evaluating coherence usually ignores grammar or spelling errors.
+  - **Cohesive:**  Whether the sentences in a story are formally connected. They can be connected by either a referential link (co-reference, bridging anaphora) or by a semantic connector.
   - **Consistency:**  Whether the sentences are logically aligned with the preceding story.
   - **Implicit Relevance:**  Whether a story follows the same topic from beginning to end.
-- **Completeness (COM):** Whether the story covers all the underlying concepts, theories, and historical context.
-  - **Ending:**  Whether the story has a clear and good ending.
+- **Completeness (COM):** Whether the story covers all its underlying concepts, theories, and historical context.
+  - **Ending:**  Whether the story has a clear and rational ending.
+- **Clarity (CLA):** Whether the story is clear and easy to understand, with no confusing or ambiguous elements.
 - **Informativeness/Complexity (INF):**  Whether the story contains rich, detailed and professional information to support its progression and world-building.
 - **Commonsense (COMM):**  Whether the story adheres to commonsense knowledge, such as physical entities and social interactions.
 - **Character Development (CHA):**  Whether the story features well-developed and engaging characters that are believable, relatable, and
 contribute to the overall narrative or theme.
 - **Interestingness/Engagement (INT):**  Whether the story is highly enjoyable or entertaining to read, with rich details and descriptions that engage
-the reader’s senses and imagination.
+the readers’ senses and imagination.
 - **Empathy (EMP):**  Whether the story arouses the readers’ empathy for the writer or the characters.
 - **Surprise (SUP):**  Whether the story contains some suspense and surprise, especially in suspense stories.
 
@@ -116,15 +123,15 @@ the reader’s senses and imagination.
 ### Story Evaluation Benchmarks
 |  Corpora  | Paper |   Data Source  | Format | Criteria | Aspects | #Stories | #Samples |
 |:------------|:--------:|:--------:|:--------:|:--------:|:------:|:------:|:------:|
-| OpenMEVA | [Paper]() | [Download]() | Rating Scale (1-5)  | Overall | REL, FLU, COH, COMM | 2,000|  2,000| 
-| HANNA  |[Paper]() | [Download]() |  Rating Scale (1-5)  | Single  | REL, COH, EMP, SUP, INT, INF | 1,056|  19,008| 
-| VHED  | [Paper]() | [Download]() | Comparison  | Overall |  FLU, COH, SIM, REL | 4,500 | 13,875| 
-| StoryER-Rank  | [Paper]() | [Download]() | Comparison  | Overall|  - | 63,929 | 116,971| 
-| StoryER-Rate  | [Paper]() | [Download]() | Rating Scale (1-5)  | Single|  COH, STY, EMP | 12,669 | 45,948| 
-| Per-MPST  | [Paper]() | [Download](https://github.com/facebookresearch/PerSE) | Comparison  | Overall|  - | 981 | 69,947 |
-| Per-DOC | [Paper]() | [Download](https://github.com/facebookresearch/PerSE) | Rating Scale (1-5)  |  Single | INT, ADAP, SUR, CHA, END | 596 | 8,922| 
-| Xie  | [Paper]() | [Download]() | Rating Scale (1-5)  | Single|  REL, FLU, COH, COMM, INT|  200 | 1,000| 
-| COHESENTIA | [Paper]() | [Download]() | Rating Scale (1-5)  | Single | COH | 500|  500 | 
+| OpenMEVA | [Paper](https://arxiv.org/abs/2105.08920) | [Download](https://github.com/thu-coai/OpenMEVA) | Likert Scale (1-5)  | Overall | REL, FLU, COH, COMM | 2,000|  2,000| 
+| HANNA  |[Paper](https://aclanthology.org/2022.coling-1.509/) | [Download](https://github.com/dig-team/hanna-benchmark-asg) |   Likert Scale (1-5)  | Single  | REL, COH, EMP, SUP, INT, INF | 1,056|  19,008| 
+| VHED  | [Paper](https://github.com/AcademiaSinicaNLPLab/VHED) | [Download](https://aclanthology.org/2022.acl-long.441/) | Comparison  | Overall |  FLU, COH, SIM, REL | 4,500 | 13,875| 
+| StoryER-Rank  | [Paper](https://aclanthology.org/2022.emnlp-main.114/) | [Download](https://github.com/sairin1202/StoryER) | Comparison  | Overall|  - | 63,929 | 116,971| 
+| StoryER-Scale  | [Paper](https://aclanthology.org/2022.emnlp-main.114/) | [Download](https://github.com/sairin1202/StoryER) | Likert Scale (1-5)  | Single|  COH, END, STY, CHA, EMP | 12,669 | 45,948| 
+| Per-MPST  | [Paper](https://arxiv.org/abs/2310.03304) | [Download](https://github.com/facebookresearch/PerSE) | Comparison  | Overall|  - | 981 | 69,947 |
+| Per-DOC | [Paper](https://arxiv.org/abs/2310.03304) | [Download](https://github.com/facebookresearch/PerSE) | Likert Scale (1-5)  |  Single | INT, ADAP, SUR, CHA, END | 596 | 8,922| 
+| Xie  | [Paper](https://arxiv.org/abs/2301.09790) | [Download](https://github.com/ZhuohanX/DeltaScore/tree/master/data/crowdsource) | Likert Scale (1-5)  | Single|  REL, FLU, COH, COMM, INT|  200 | 1,000| 
+| COHESENTIA | [Paper](https://aclanthology.org/2023.emnlp-main.324/) | [Download](https://github.com/AviyaMn/CoheSentia) | Likert Scale (1-5)  | Single | COH | 500|  500 | 
 
 <a name="metrics"></a>
 ## Metrics
